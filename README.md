@@ -17,7 +17,7 @@ It is a portfolio piece, not a client deliverable. All data is synthetic and cle
 
 ## Live demo
 
-**[Try it on Hugging Face →](https://huggingface.co/spaces/enghamza-AI/pulse)**
+**[Try it on Hugging Face →](https://pulse-synthsec-ai.streamlit.app)**
 
 Takes about 30 seconds: click "Run analysis," watch the pipeline execute live, browse the dashboard.
 
