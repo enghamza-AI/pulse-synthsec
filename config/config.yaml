@@ -1,0 +1,94 @@
+
+
+synthetic_data:
+  
+  n_customers: 5000
+
+ 
+  simulation_days: 730
+
+
+  random_seed: 42
+
+ 
+  one_time_buyer_fraction: 0.55
+
+
+  cadence_lognormal_mean: 3.6   
+  cadence_lognormal_sigma: 0.6  
+
+  
+  order_value_lognormal_mean: 3.9   
+  order_value_lognormal_sigma: 0.5
+
+ 
+  categories:
+    - "apparel"
+    - "home_goods"
+    - "electronics_accessories"
+    - "beauty"
+    - "outdoor"
+
+cleaning:
+ 
+  min_order_value: 1.0
+
+
+  max_order_value_cap: 2000.0
+
+ 
+  min_orders_per_customer: 1
+
+feature_engineering:
+ 
+  anchor_date: null  
+
+  
+  min_orders_for_supervised_label: 2
+
+segmentation:
+  
+  n_clusters: 4
+
+ 
+  random_state: 42
+
+ 
+  n_init: 10
+
+  
+  clustering_features:
+    - "recency_days"
+    - "frequency"
+    - "monetary_total"
+    - "interpurchase_mean_days"
+
+scoring:
+  # Fraction of the supervised-eligible customers (>= min_orders_for_supervised_label)
+  # held out as a test set to report an honest MAE.
+  test_size: 0.2
+
+
+  random_state: 42
+
+
+  n_estimators: 200
+
+
+  max_depth: 8
+
+recommendations:
+ 
+  at_risk_overdue_multiplier: 1.5
+
+
+  vip_monetary_floor: 500.0
+
+app:
+
+  data_mode_default: "demo"
+
+
+  demo_max_rows: 2000
+
+  demo_csv_path: "data/demo_sample.csv"
