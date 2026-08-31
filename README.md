@@ -1,7 +1,7 @@
 
 # Pulse — Customer Intelligence Dashboard
 
-[![HF Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/enghamza-AI/pulse-customer-intelligence)
+[![HF Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/enghamza-AI/pulse)
 [![GitHub](https://img.shields.io/badge/GitHub-repo-181717?logo=github)](https://github.com/enghamza-AI/pulse-customer-intelligence)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue?logo=python)](https://www.python.org/)
 [![Dataset](https://img.shields.io/badge/dataset-synthetic-orange)](#dataset)
